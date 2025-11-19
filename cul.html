@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Random</title>
+    <style>
+        button{
+            padding:30px 40px;
+            background-color: rgb(16, 194, 194);
+            border-radius: 100px;
+        }
+        img
+        {
+            width: 80px;
+        }
+        p
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <p> Rock    Paper Scissor</p>
+    <button
+    onclick=
+    "
+        ran=Math.random(ran)
+        console.log(ran)
+        if(ran<0.33)
+        {
+            alert('You picked Rock, and Computer picked Scissor.So you are win.')
+        }
+        else if(ran>0.33&&ran<0.66)
+        {
+            alert('You picked Rock, and Computer picked paper.So you are lose.')
+        }
+        else if(ran>0.66&&ran<0.99)
+        {
+            alert('You picked Rock, and Computer picked Rock.So you are equal.')
+        }
+        else 
+        {
+            alert('Error')
+        }
+    "    
+    ><img src="/pic/rock.png" alt=""></button>
+    <button
+    onclick=
+    "
+        ran=Math.random(ran)
+        console.log(ran)
+        if(ran<0.33)
+        {
+            alert('You picked Paper, and Computer picked Scissor.So you are lose.')
+        }
+        else if(ran>0.33&&ran<0.66)
+        {
+            alert('You picked Paper, and Computer picked paper.So you are equal.')
+        }
+        else if(ran>0.66&&ran<0.99)
+        {
+            alert('You picked Paper, and Computer picked Rock.So you are Win.')
+        }
+        else 
+        {
+            alert('Error')
+        }
+    "
+    ><img   src="/pic/gg.png" alt=""></i></button>
+    <button
+    onclick=
+    "
+        ran=Math.random(ran)
+        console.log(ran)
+        if(ran<0.33)
+        {
+            alert('You picked Scissor, and Computer picked Scissor.So you are equal.')
+        }
+        else if(ran>0.33&&ran<0.66)
+        {
+            alert('You picked Scissor, and Computer picked paper.So you are win.')
+        }
+        else if(ran>0.66&&ran<0.99)
+        {
+            alert('You picked Scissor, and Computer picked Rock.So you are lose.')
+        }
+        else 
+        {
+            alert('Error')
+        }
+    "
+    ><img src="/pic/pp.png" alt=""></button>
+
+    <script>
+        alert('Welcome to scam game bro');
+        let ran=0;
+    </script>
+</body>
+</html>
